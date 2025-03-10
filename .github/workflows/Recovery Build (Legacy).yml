@@ -82,8 +82,8 @@ jobs:
             libwxgtk3.0-gtk3-dev libxml2 lzop pngcrush schedtool squashfs-tools \
             imagemagick libbz2-dev lzma ncftp qemu-user-static libstdc++-10-dev libncurses5 python3 tar
 
-    - name: Install OpenJDK
-      uses: actions/setup-java@v4
+    - name: Setup Java JDK
+      uses: actions/setup-java@v4.7.0
       with:
         distribution: 'zulu'
         java-version: '11'
